@@ -1,0 +1,2 @@
+CREATE DATABASE tracksdb;
+GRANT ALL PRIVILEGES ON tracksdb.* TO tracks@localhost IDENTIFIED BY 'q1pass' WITH GRANT OPTION;

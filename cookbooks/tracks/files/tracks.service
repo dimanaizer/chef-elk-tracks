@@ -1,0 +1,14 @@
+[Unit]
+Description=Tracks
+
+[Service]
+User=tracks
+Group=tracks
+WorkingDirectory=/opt/tracks
+Environment=RAILS_ENV=production
+SyslogIdentifier=ruby-tracks
+
+ExecStart=/usr/local/bin/bundle exec rails server -b 127.0.0.1 -e production
+
+[Install]
+WantedBy=multi-user.target
